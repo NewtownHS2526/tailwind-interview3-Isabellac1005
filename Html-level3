@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Three – Tailwind Activity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-100">
+    <main class="mx-auto max-w-5xl space-y-12 p-12">
+      <header class="space-y-4 text-center">
+        <p class="text-sm uppercase tracking-[0.35em] text-cyan-300">Workshop</p>
+        <h1 class="text-4xl font-bold">Build a Minimal Event Promo</h1>
+        <p class="mx-auto max-w-2xl text-slate-400">
+          Tailwind makes it easy to prototype event landing sections with dark surfaces and neon accents.
+        </p>
+      </header>
+
+      <section class="hero-panel relative overflow-hidden rounded-3xl border border-cyan-400/40 bg-slate-900/100 before:absolute before:inset-0 before:bg-gradient-to-r before:from-cyan-500/20 before:via-transparent before:to-fuchsia-500/20 before:blur-3xl p-10">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div class="space-y-3">
+            <h2 class="text-3xl font-semibold">Product Design Live</h2>
+            <p class="text-slate-400">
+              A two-day intensive covering modern design systems, prototyping, and handoff workflows.
+            </p>
+          </div>
+          <div class="flex flex-col items-start gap-3 md:items-end">
+            <span class="rounded-full bg-cyan-400/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-cyan-200 animate-pulse">
+              15 seats left
+            </span>
+            <button class="rounded-full px-6 py-3 font-semibold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition">
+              Reserve spot
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
+        <h3 class="text-2xl font-semibold">Agenda Highlights</h3>
+        <ul class="mt-6 space-y-4 divide-y divide-slate-800 md:grid md:grid-cols-2 md:gap-6 text-slate-300">
+          <li>Design token systems and automation</li>
+          <li>Real-time component handoff strategies</li>
+          <li>Motion-first storytelling and prototyping</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
